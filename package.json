@@ -1,0 +1,26 @@
+{
+  "name": "rwlock-promise",
+  "version": "0.1.0",
+  "description": "Shared/exclusive locks with Promise API",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && mocha",
+		"coverage": "tsc && nyc npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SOF3/rwlock-promise.git"
+  },
+  "author": "SOFe <sofe2038@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/SOF3/rwlock-promise/issues"
+  },
+  "homepage": "https://github.com/SOF3/rwlock-promise#readme",
+  "devDependencies": {
+    "mocha": "^7.1.1",
+    "nyc": "^15.0.0",
+    "typescript": "^3.8.3"
+  }
+}
