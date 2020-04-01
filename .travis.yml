@@ -1,4 +1,8 @@
 language: node
 
+install:
+  - nvm use 12.16
+  - npm install
+
 script:
   - npm run coverage
