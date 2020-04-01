@@ -1,0 +1,4 @@
+language: node
+
+script:
+  - npm run coverage
