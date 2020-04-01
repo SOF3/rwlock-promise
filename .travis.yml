@@ -1,7 +1,7 @@
 language: node
 
 install:
-  - nvm use 12.16
+  - nvm install 12.16 && nvm use 12.16
   - npm install
 
 script:
