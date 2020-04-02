@@ -1,12 +1,13 @@
 {
   "name": "rwlock-promise",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Shared/exclusive locks with Promise API",
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc",
     "test": "tsc && mocha",
-    "coverage": "tsc && nyc --reporter=lcov mocha && codecov"
+    "coverage": "tsc && nyc --reporter=lcov mocha && codecov",
+		"stryker": "tsc && stryker run"
   },
   "repository": {
     "type": "git",
@@ -19,6 +20,10 @@
   },
   "homepage": "https://github.com/SOF3/rwlock-promise#readme",
   "devDependencies": {
+    "@stryker-mutator/core": "^3.1.0",
+    "@stryker-mutator/mocha-framework": "^3.1.0",
+    "@stryker-mutator/mocha-runner": "^3.1.0",
+    "@stryker-mutator/typescript": "^3.1.0",
     "codecov": "^3.6.5",
     "mocha": "^7.1.1",
     "nyc": "^15.0.0",
