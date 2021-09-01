@@ -21,7 +21,7 @@
   "homepage": "https://github.com/SOF3/rwlock-promise#readme",
   "devDependencies": {
     "@stryker-mutator/core": "^5.3.0",
-    "@stryker-mutator/mocha-framework": "^3.1.0",
+    "@stryker-mutator/mocha-framework": "^4.0.0",
     "@stryker-mutator/mocha-runner": "^5.3.0",
     "@stryker-mutator/typescript": "^4.0.0",
     "codecov": "^3.6.5",
