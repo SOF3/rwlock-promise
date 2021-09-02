@@ -190,7 +190,7 @@ export class RwLock<T> {
 				const fxList = [vvvHandler]
 				this.tailFxList = fxList
 				this.mutex.run(() => new Promise(batchDone => {
-					this.batchDone = batchDone
+					this.batchDone = () => batchDone(undefined)
 					this.remaining = fxList.length
 
 					for(const fx of fxList) {
